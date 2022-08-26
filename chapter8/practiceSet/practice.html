@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 122px;
+            background-color: black;
+        }
+        main{
+            height: 899px;
+            background-color: blue;
+        }
+        .progress{
+            background-color: red;
+            height: 3px;
+            animation: load 1s ease-in-out 1;
+        }
+        @keyframes load{
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 90vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        }
+        @keyframes rotate{
+            0%{
+                transform:rotate(0deg)
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        #dragon{
+            animation: rotate 1s ease-in infinite;
+        }
+        .slider{
+            background-color: aqua;
+            height: 123px;
+            width: 100vw;
+        }
+        .slider{
+            background-color: aqua;
+            height: 523px;
+            width: 100vw;
+            overflow: hidden;
+            margin: auto;
+        }
+        img{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <img id="dragon" src="images.png" alt="" width="122px">
+        <div class="slider">
+            <img src="https://source.unsplash.com/collection/190727/1600x900" alt="" >
+        </div>
+    </main>
+</body>
+</html>

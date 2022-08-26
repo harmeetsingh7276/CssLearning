@@ -1,0 +1,14 @@
+.box1{
+    background: red;
+    margin: 30px;
+    height: 20px;
+}
+
+.box2{
+    background: aqua;
+    margin: 30px;
+    height: 20px;
+*{
+    margin: 0;
+    padding: 0;
+}
