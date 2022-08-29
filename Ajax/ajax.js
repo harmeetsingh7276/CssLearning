@@ -7,7 +7,13 @@ function buttonClickHandler() {
 
     const xhr=new XMLHttpRequest();
 
-    xhr.open('GET','data.txt',true);
+    //xhr.open('GET','https://jsonplaceholder.typicode.com/todos/1',true);
+
+    //POST
+    xhr.open('POST','https://dummyjson.com/users/add',true); 
+    xhr.setRequestHeader('Content-type','application/json');
+    params=``;
+    xhr.send(params);
     //optional
     xhr.onprogress=function () {
         console.log("on progress");
@@ -21,12 +27,13 @@ function buttonClickHandler() {
             console.error("Some error occured")
         }
     }
-
-    //send request
-    xhr.send();
-
     xhr.onreadystatechange=function () {
         console.log("Ready State=>"+xhr.readyState);
     }
+    //send request
+   // xhr.send();
+    console.log("we are done!")
+    
+
 
 }
